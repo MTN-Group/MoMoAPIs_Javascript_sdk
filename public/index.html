@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>GSMA</title>
+    </head>
+    <body>
+        <h1 class="main"></h1>
+        <script src="mmsdk.min.js"></script>
+        <script>
+            momo.initCollectionAuth({
+                username: 'ee0128a6-9625-4049-819b-dd34f50bfec0',
+                pass: '4e134145a6fb4413aca7955ed1c6016b',
+                SUBSCRIPTION_KEY: 'f4f2da18c0db4033b897644dc8ef1fec',
+                
+                onFailure: (errorObj) => {
+                    console.log('init failed stdAuth', errorObj);
+                },
+                onSuccess: (sucess) => {
+                    console.log('init success stdAuth', sucess);
+                },
+            });
+
+            // momo.initDisbursementAuth({
+            //     username: 'ee0128a6-9665-4249-819a-dd34f50bfec8',
+            //     pass: '28d11d9beccb4a11890a7dea85ff5ebb',
+            //     SUBSCRIPTION_KEY: '1f3241034c3746259b9ad022c0ef201a',
+                
+            //     onFailure: (errorObj) => {
+            //         console.log('init failed stdAuth', errorObj);
+            //     },
+            //     onSuccess: (sucess) => {
+            //         console.log('init success stdAuth', sucess);
+            //     },
+            // });
+        </script>
+        <!-- load sdk modules -->
+    </body>
+</html>
