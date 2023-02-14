@@ -24,13 +24,13 @@
         "jest": "^27.4.7",
         "webpack": "^5.53.0",
         "webpack-cli": "^4.8.0",
-        "webpack-dev-server": "^4.2.1"
+        "webpack-dev-server": "^4.11.1"
     },
     "dependencies": {
         "@babel/runtime": "^7.16.7",
         "axios": "^0.21.4",
         "dotenv": "^16.0.3",
-        "qs": "^6.10.1",
+        "qs": "^6.11.0",
         "uuid": "^8.3.2"
     }
 }
