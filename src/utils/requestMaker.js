@@ -32,15 +32,17 @@ export default function requestMaker(
 
     //  configure post request calls
 
-    const post = (data, fileUpload = false) => {
+    const post = (data, fileUpload = false,urlencoded=false) => {
         return {
             url,
             headers: {
                 ...headers,
                 'Content-Type': fileUpload
                     ? 'multipart/form-data'
-                    : 'application/json',
-                Accept: fileUpload ? 'multipart/form-data' : 'application/json',
+                    : urlencoded
+                    ? 'application/x-www-form-urlencoded'
+                    :'application/json',
+                Accept: fileUpload ? 'multipart/form-data' : urlencoded ? 'application/x-www-form-urlencoded' : 'application/json',
             },
             data,
             method: 'post',

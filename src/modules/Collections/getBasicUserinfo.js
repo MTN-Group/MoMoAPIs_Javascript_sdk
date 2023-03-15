@@ -1,10 +1,8 @@
 import { checkRequiredProps, requestMaker } from "../../utils";
 export default function getBasicUserinfo(props, onError) {
   if (checkRequiredProps(props, ["accountHolderMSISDN"], onError)) {
-    const { correlationId } = props;
     let header = {
-      "X-Reference-Id": correlationId,
-      "X-Target-Environment": "sandbox", //should be removed on production
+      "X-Target-Environment": process.env.TARGETENVIRONMENT,
     };
     let { accountHolderMSISDN } = props;
     return requestMaker(

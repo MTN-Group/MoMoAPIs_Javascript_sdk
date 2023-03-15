@@ -7,10 +7,8 @@ export default function validateAccountHolder(props, onError) {
       onError
     )
   ) {
-    const { correlationId } = props;
     let header = {
-      "X-Reference-Id": correlationId,
-      "X-Target-Environment": "sandbox", //should be removed on production
+      "X-Target-Environment": process.env.TARGETENVIRONMENT,
     };
     let { accountHolderIdType, accountHolderId } = props;
     return requestMaker(

@@ -4,12 +4,11 @@ export default function refundV2(props, onError) {
         const { correlationId, callbackUrl, data } = props;
         let header = {
             'X-Reference-Id': correlationId,
-            'X-Target-Environment':'sandbox' //should be removed on production
+            "X-Target-Environment": process.env.TARGETENVIRONMENT,
         };
-        // if (callbackUrl) {
-        //     header['X-Callback-URL'] = callbackUrl;
-        // }
-
+        if (callbackUrl) {
+            header['X-Callback-URL'] = callbackUrl;
+        }
         return requestMaker(
             'disbursement/v2_0/refund', //url
             header //  headers

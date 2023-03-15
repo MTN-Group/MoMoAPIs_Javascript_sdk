@@ -4,12 +4,11 @@ export default function transfer(props, onError) {
         const { correlationId, callbackUrl, data } = props;
         let header = {
             'X-Reference-Id': correlationId,
-            'X-Target-Environment':'sandbox' //should be removed on production
+            "X-Target-Environment": process.env.TARGETENVIRONMENT,
         };
-        // if (callbackUrl) {
-        //     header['X-Callback-URL'] = callbackUrl;
-        // }
-
+        if (callbackUrl) {
+            header['X-Callback-URL'] = callbackUrl;
+        }
         return requestMaker(
             'remittance/v1_0/transfer', //url
             header //  headers
