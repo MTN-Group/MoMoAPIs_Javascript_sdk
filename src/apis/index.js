@@ -1,4 +1,4 @@
-import gsmaAuth from './momoAuth';
+import momoAuth from './momoAuth';
 
 export default function fetchHandler(
     reqConfig = null,
@@ -7,7 +7,7 @@ export default function fetchHandler(
 ) {
     if (reqConfig) {
         // choose auth type
-        let apiInstance = gsmaAuth;
+        let apiInstance = momoAuth;
         try {
             
             apiInstance(reqConfig)

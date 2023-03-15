@@ -70,24 +70,37 @@ function generateAuthHeaderFormGivenParams(
   onFailure
 ) {
   if (SUBSCRIPTION_KEY && accessToken) {
-    stdAuth &&
+    if(requestConfig.headers.Authorization)
+    {
+      stdAuth &&
+      stdAuth({
+        ...requestConfig.headers,
+        "Ocp-Apim-Subscription-Key": SUBSCRIPTION_KEY,
+      });
+    }
+    else
+    {
+      stdAuth &&
       stdAuth({
         ...requestConfig.headers,
         "Ocp-Apim-Subscription-Key": SUBSCRIPTION_KEY,
         Authorization: `Bearer ${accessToken}`,
       });
-  } else if (username && pass) {
-    const base64Data = window.btoa(`${username}:${pass}`);
-    basicAuth &&
-      basicAuth({
-        ...requestConfig.headers,
-        Authorization: `Bearer ${base64Data}`,
-      });
-  } else {
-    // onFailure('Missing auth params', '400');
-    basicAuth &&
-      basicAuth({
-        ...requestConfig.headers,
-      });
-  }
+    }
+    
+  } 
+  // else if (username && pass) {
+  //   const base64Data = window.btoa(`${username}:${pass}`);
+  //   basicAuth &&
+  //     basicAuth({
+  //       ...requestConfig.headers,
+  //       Authorization: `Bearer ${base64Data}`,
+  //     });
+  // } else {
+  //   // onFailure('Missing auth params', '400');
+  //   basicAuth &&
+  //     basicAuth({
+  //       ...requestConfig.headers,
+  //     });
+  // }
 }
