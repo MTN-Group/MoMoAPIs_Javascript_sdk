@@ -1,6 +1,7 @@
 import choosePayment from "../utils/choosePayment";
 import Collections from "./Collections";
 import Disbursements from "./Disbursements";
+import Remittances from './Remittances'
 import apiKey from "./sandboxUser/apiKey";
 import apiUser from "./sandboxUser/apiUser";
 
@@ -15,6 +16,13 @@ export const moduleWrapperWithCollection = (authHeaders) => {
 export const moduleWrapperWithDisbursement = (authHeaders) => {
   window.momo.auth = {
     Disbursement: choosePayment(Disbursements, authHeaders),
+  };
+};
+
+//remittances
+export const moduleWrapperWithRemittances = (authHeaders) => {
+  window.momo.auth = {
+    Remittances: choosePayment(Remittances, authHeaders),
   };
 };
 
