@@ -61,7 +61,6 @@ e.g.
 MOMO_COLLECTION_TOKEN_URL='https://sandbox.momodeveloper.mtn.com/collection/token/'
 MOMO_DISBURSEMENT_TOKEN_URL='https://sandbox.momodeveloper.mtn.com/disbursement/token/'
 MOMO_REMITTANCE_TOKEN_URL='https://sandbox.momodeveloper.mtn.com/remittance/token/'
-SUBSCRIPTION_KEY = 'f4f2da18c0db4033b897644dc8ef1fec'
 MOMO_BASE_URL_AUTH = 'https://sandbox.momodeveloper.mtn.com/'
 TARGETENVIRONMENT = 'sandbox'
 ```

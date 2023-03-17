@@ -1,18 +1,12 @@
-# MMAPI SDK - Test App Installation:
+# MoMo-API SDK - Test App Installation:
 
 Step 1: Clone the repository<br />
 Step 2: pull the latest build from test-app branch<br />
 Step 3: npm install<br />
-Step 4: Add `REACT_APP_CLIENT_API_KEY` with the Client API key as value in .env<br />
-Step 5: Add `REACT_APP_CONSUMER_KEY` with the Consumer key as value in .env<br />
-Step 6: Add `REACT_APP_CONSUMER_SECRET` with the Consumer Secret as value in .env<br />
 Step 7: Add `SKIP_PREFLIGHT_CHECK=true` in .env<br />
 Step 8 (OPTIONAL): If SDK is added locally into the application, Add the following Environment variables as well in .env<br />
 
 ```
-REACT_APP_CLIENT_API_KEY = '(API key)
-REACT_APP_CONSUMER_KEY = '(Consumer key)'
-REACT_APP_CONSUMER_SECRET = '(Consumer Secret)'
 SKIP_PREFLIGHT_CHECK=true
 ```
 
@@ -48,13 +42,13 @@ Step 2. Set the type of the child as - "collapse", and icon as - icons.IconKey<b
 The Resulting Object will be of the following structure:<br/>
 
 ```json
-            {
-            id: "merchantpay",
-            title: "Merchant Payments",
-            type: "collapse",
-            icon: icons.IconKey,
-            children: [],
-            }
+           {
+      id: "Collections",
+      title: "Collections",
+      type: "collapse",
+      icon: icons.IconKey,
+      children: Collections,
+    },
 ```
 
 ## To Create a new Test API:
@@ -63,25 +57,58 @@ Step 1. Create a children array under the use case if it doesn't exist.<br/>
 Step 2. Create a new child object under the children array of the use case.<br/>
 Step 3: Set an id for the child (Camel-Case form of the Use case scenario).<br/>
 Step 4: Set type as "item".<br/>
-Step 5: Set requestType as the SDK child function for Use Case Scenario. (eg: payeeInitiated).<br/>
-Step 6: Set requestCategory as the use case object's key from SDK. (eg: merchantPay).<br/>
-Step 7: Set target as true, and polling as true, if the scenario is a polling method.<br/>
-Step 8: Create a header and body array for any header or body values that has to be passed to SDK.<br/>
+Step 5: Set requestType as the SDK child function for Use Case Scenario. (eg: requesttoPayTransaction).<br/>
+Step 6: Set requestCategory as the use case object's key from SDK. (eg: Collections).<br/>
+<!-- Step 7: Set target as true, and polling as true, if the scenario is a polling method.<br/>
+Step 8: Create a header and body array for any header or body values that has to be passed to SDK.<br/> -->
 
 The Resulting Object will be of the following structure:<br/>
 
 ```json
         {
-            id: "payeeInitiatedMerchantPayment",
-            title: "Payee-Initiated Merchant Payment",
-            type: "item",
-            requestType: "payeeInitiated",
-            requestCategory: "merchantPay",
-            target: true,
-            polling: false,
-            headers: [],
-            params: [],
-        },
+        id: 'requesttopay',
+        title: 'Request To Pay',
+        type: 'item',
+        requestType: 'requesttoPayTransaction',
+        requestCategory: 'Collections',
+        target: true,
+        polling: false,
+        returnClientCorrelation: true,
+        headers: [
+            {
+                id: 'callbackUrl',
+                required: false,
+                caption: 'X-Callback-URL',
+                type: 'string',
+                defaultValue: 'http://71d44092-ffdf-48fc-a51d-6d50da2c1012.mock.pstmn.io/rpay',
+            },
+        ],
+        params: [
+            {
+                id: 'body',
+                required: true,
+                caption: 'JSON Body',
+                type: 'json',
+                defaultValue: JSON.stringify(
+                    {
+                        "amount": "5.0",
+                        "currency": "EUR",
+                        "externalId": "6353636",
+                        "payer": {
+                          "partyIdType": "MSISDN",
+                          "partyId": "0248888736"
+                        },
+                        "payerMessage": "Pay for product a",
+                        "payeeNote": "payer note"
+                      },
+                    null,
+                    2
+                ),
+            },
+        ],
+        testSuccessParams: [],
+        testErrorParams: ['errorCategory', 'errorCode'],
+    },
 ```
 
 ## To add fields to pass Headers and Body:
@@ -95,8 +122,8 @@ Step 5: Set a default value to automatically load the value when the form is loa
 # Authenticating Test application
 
 Step 1: Click on the Gear icon on the Bottom right corner.<br/>
-Step 2: Select an Authentication type. By default there will be no authentication.<br/>
-Step 3: Provide the credentials and Authenticate<br/>
+Step 2: Select an product  there will be no authentication.<br/>
+Step 3: select an product from dropdown list & the coresponding credentials in the input field and Authenticate<br/>
 
 # Testing a Use case Scenario
 
