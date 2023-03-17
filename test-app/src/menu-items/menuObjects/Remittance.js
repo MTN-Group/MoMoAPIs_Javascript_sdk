@@ -27,7 +27,7 @@ const Remittance = [
                 required: true,
                 caption: 'password',
                 type: 'string',
-                defaultValue: '0ef6184cb0a740b48896245eeb43898c',
+                defaultValue: '43eff5076a0a4858adb7b95d8c69b3f4',
             },
         ],
         params: [

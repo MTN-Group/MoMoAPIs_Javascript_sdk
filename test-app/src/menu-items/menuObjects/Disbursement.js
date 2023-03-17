@@ -27,7 +27,7 @@ const Disbursement = [
                 required: true,
                 caption: 'password',
                 type: 'string',
-                defaultValue: '0ef6184cb0a740b48896245eeb43898c',
+                defaultValue: '43eff5076a0a4858adb7b95d8c69b3f4',
             },
         ],
         params: [
@@ -85,7 +85,7 @@ const Disbursement = [
                 required: false,
                 caption: 'X-Callback-URL',
                 type: 'string',
-                defaultValue: 'https://end13wxm5t7fgd6.m.pipedream.net/',
+                defaultValue: 'http://71d44092-ffdf-48fc-a51d-6d50da2c1012.mock.pstmn.io/transfer',
             },
         ],
         params: [
@@ -193,7 +193,7 @@ const Disbursement = [
                 required: false,
                 caption: 'X-Callback-URL',
                 type: 'string',
-                defaultValue: 'http://webhook.site/522f2078-f629-4e94-a8b4-bc8b4319c950',
+                defaultValue: 'http://71d44092-ffdf-48fc-a51d-6d50da2c1012.mock.pstmn.io/rpay',
             },
         ],
         params: [
@@ -237,7 +237,7 @@ const Disbursement = [
                 required: false,
                 caption: 'X-Callback-URL',
                 type: 'string',
-                defaultValue: 'http://webhook.site/522f2078-f629-4e94-a8b4-bc8b4319c950',
+                defaultValue: 'http://71d44092-ffdf-48fc-a51d-6d50da2c1012.mock.pstmn.io/rpay',
             },
         ],
         params: [
