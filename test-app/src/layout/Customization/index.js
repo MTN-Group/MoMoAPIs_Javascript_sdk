@@ -35,6 +35,7 @@ import { gridSpacing } from "store/constant";
 
 // assets
 import { IconSettings } from "@tabler/icons";
+import { BorderAll } from "@material-ui/icons";
 // concat 'px'
 const productDetails = [
   { username: 'ee0128a6-9625-4049-819b-dd34f50bfec0', password: 'dd6cd9adf0414a1b9e7f4c229d9c74e8', subscriptionKey: '4fd0d94217004bc48a00ae95295140df', id: 'collection' },
@@ -53,7 +54,7 @@ const Customization = () => {
   // const setFormParams = (name, value) => {`  ```
   //   setFormState({ ...formState, [name]: value });
   // };
-  const [authMethod, setAuthMethod] = useState(0);
+  const [authMethod, setAuthMethod] = useState(1);
   const [authorised, setAuthorised] = useState(false);
   const [product, setProduct] = React.useState('');
   const [formState, setFormState] = useState({
@@ -227,9 +228,7 @@ const Customization = () => {
             >
               Generate Authorisation Header
             </Button>
-            {authorised && (
-              <p style={{ color: "rgb(0,255,0)" }}>Authenticated</p>
-            )}
+
           </div>
         );
         // case 2:
@@ -341,7 +340,7 @@ const Customization = () => {
           <Grid container spacing={gridSpacing} sx={{ p: 3 }}>
             <Grid item xs={12}>
               {/* font family */}
-              <SubCard title="Authentication Type">
+              {/* <SubCard title="Authentication Type">
                 <FormControl>
                   <RadioGroup
                     aria-label="font-family"
@@ -362,12 +361,16 @@ const Customization = () => {
                     />
                   </RadioGroup>
                 </FormControl>
-              </SubCard>
-              {authMethod !== 0 && (
-                <SubCard title="Set Authentication Attributes">
+              </SubCard> */}
+              {/* {authMethod !== 0 && ( */}
+                <SubCard>
+                  <h3 align="center">Login </h3>
+                  {authorised && (
+                    <p style={{ color: "rgb(0,255,0)", textAlign: "center" }}>Authenticated</p>
+                  )}
                   <FormControl>{AuthAttributesForm(authMethod)}</FormControl>
                 </SubCard>
-              )}
+              {/* )} */}
             </Grid>
           </Grid>
         </PerfectScrollbar>
