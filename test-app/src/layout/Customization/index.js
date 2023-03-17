@@ -38,9 +38,9 @@ import { IconSettings } from "@tabler/icons";
 import { BorderAll } from "@material-ui/icons";
 // concat 'px'
 const productDetails = [
-  { username: 'ee0128a6-9625-4049-819b-dd34f50bfec0', password: 'dd6cd9adf0414a1b9e7f4c229d9c74e8', subscriptionKey: '4fd0d94217004bc48a00ae95295140df', id: 'collection' },
-  { username: 'ee0128a6-9625-4049-819b-dd34f50bfec0', password: 'dd6cd9adf0414a1b9e7f4c229d9c74e8', subscriptionKey: 'd34f9bb867b24001b364789269b60422', id: 'disbursement' },
-  { username: 'ee0128a6-9625-4049-819b-dd34f50bfec0', password: 'dd6cd9adf0414a1b9e7f4c229d9c74e8', subscriptionKey: '87a218cbc8e042dc83c4ddd44f30e3f1', id: 'remittance' },
+  { username: 'ee0128a6-9625-4049-819b-dd34f50bfec0', password: '43eff5076a0a4858adb7b95d8c69b3f4', subscriptionKey: '4fd0d94217004bc48a00ae95295140df', id: 'collection' },
+  { username: 'ee0128a6-9625-4049-819b-dd34f50bfec0', password: '43eff5076a0a4858adb7b95d8c69b3f4', subscriptionKey: 'd34f9bb867b24001b364789269b60422', id: 'disbursement' },
+  { username: 'ee0128a6-9625-4049-819b-dd34f50bfec0', password: '43eff5076a0a4858adb7b95d8c69b3f4', subscriptionKey: '87a218cbc8e042dc83c4ddd44f30e3f1', id: 'remittance' },
 ];
 // ===========================|| LIVE CUSTOMIZATION ||=========================== //
 
