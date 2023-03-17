@@ -1,6 +1,6 @@
 
 
-# MOMOAPI-Sample App for Javascript SDK
+# MOMOAPI-Sample Web App for Javascript SDK
 This is a sample web app provided to demonstrate the working of MOMOAPI SDK in Javascript
 
 
@@ -97,8 +97,6 @@ npm start
 
 # Request pay
 
-In this scenario user can initiate the request pay by clicking the "request pay" item in the list,
-
 Expected output of this function is given below
 
 ## Request pay - output
@@ -143,7 +141,6 @@ Expected output of this function is given below
 
 # Validate account holder
 
-In this scenario we can validate the user by clicking the "Validate account holder" item in the list,
 
 Expected output of this function is given below
 
@@ -158,8 +155,6 @@ Expected output of this function is given below
 
 
 # Account Balance 
-
-In this scenario user can view the balance of an account by clicking "balance" item in list
 
 
 Expected output of this function is given below
@@ -180,8 +175,6 @@ Expected output of this function is given below
 
 # Account Balance in specific currency
 
-In this scenario user can view the balance of an account by clicking "balance" item in list
-
 
 Expected output of this function is given below
 
@@ -197,8 +190,6 @@ Expected output of this function is given below
 <a name="Request-to-withdraw"></a>													  
 													  
 # Request to withdraw
-
-In this scenario user can initiate the request pay by clicking the "request to withdraw" item in the list,
 
 Expected output of this function is given below
 
@@ -243,8 +234,6 @@ Expected output of this function is given below
 <a name="Collection-Validate-Consumer-Identity"></a>													  
 
 # Validate consumer identity
-
-in this scenario the user can validate the identify of a user by clicking the "validate consumer identity" item
 
 Expected output of this function is given below
 													  

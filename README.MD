@@ -173,58 +173,58 @@ Contains functions for all the use case scenarios within Collections.
     <td>RequestPay requestPay</td>
   </tr>
   <tr>
-    <td><a href="/docs\collections\requestToPay.Readme.md">Request To Pay Transaction Status</a></td>
+    <td><a href="/docs/collections/requestToPayTransactionStatusReadme.md">Request To Pay Transaction Status</a></td>
     <td>requestToPayTransactionStatus</td>
     <td>String referenceId</td>
   </tr>
   <tr>
-    <td><a href="/docs/collection/requestToPayDeliveryNotification.Readme.md">Request To Pay Delivery Notification</a></td>
+    <td><a href="/docs/collections/requestToPayDeliveryNotification.Readme.md">Request To Pay Delivery Notification</a></td>
     <td>requestToPayDeliveryNotification</td>
     <td>String referenceId, DeliveryNotification deliveryNotification, (optional)String deliveryNotificationHeader</td>
   </tr>
   <tr>
     <td rowspan="3">Request To Withdraw</td>
-    <td><a href="/docs/collection/requestToWithdrawV1.Readme.md">Request To Withdraw-V1</a></td>
+    <td><a href="/docs/collections/requestToWithdrawV1.Readme.md">Request To Withdraw-V1</a></td>
     <td>requestToWithdrawV1</td>
     <td>Withdraw withdraw</td>
   </tr>
   <tr>
-    <td><a href="/docs/collection/requestToWithdrawV2.Readme.md">Request To Withdraw-V2</a></td>
+    <td><a href="/docs/collections/requestToWithdrawV2.Readme.md">Request To Withdraw-V2</a></td>
     <td>requestToWithdrawV2</td>
     <td>Withdraw withdraw</td>
   </tr>
   <tr>
-    <td><a href="/docs/collection/requestToWithdrawTransactionStatus.Readme.md">Request To Withdraw Transaction Status</a></td>
+    <td><a href="/docs/collections/requestToWithdrawTransactionStatus.Readme.md">Request To Withdraw Transaction Status</a></td>
     <td>requestToWithdrawTransactionStatus</td>
     <td>String referenceId</td>
   </tr>
   <tr>
     <td>Get UserInfo With Consent</td>
-    <td><a href="/docs/collection/getUserInfoWithConsent.Readme.md">Get UserInfo With Consent</a></td>
+    <td><a href="/docs/collections/getUserInfoWithConsent.Readme.md">Get UserInfo With Consent</a></td>
     <td>getUserInfoWithConsent</td>
     <td>AccountHolder accountHolder, String scope, AccessType accessType</td>
   </tr>
   <tr>
     <td>Get Basic Userinfo</td>
-    <td><a href="/docs/collection/getBasicUserinfo.Readme.md">Get Basic Userinfo</a></td>
+    <td><a href="/docs/collections/getBasicUserinfo.Readme.md">Get Basic Userinfo</a></td>
     <td>getBasicUserinfo</td>
     <td>String msisdn</td>
   </tr>
   <tr>
     <td>Validate Account Holder Status</td>
-    <td><a href="/docs/collection/validateAccountHolderStatus.Readme.md">Validate Account Holder Status</a></td>
+    <td><a href="/docs/collections/validateAccountHolderStatus.Readme.md">Validate Account Holder Status</a></td>
     <td>validateAccountHolderStatus</td>
     <td>AccountHolder accountHolder</td>
   </tr>
   <tr>
     <td>Get Account Balance</td>
-    <td><a href="/docs/collection/getAccountBalance.Readme.md">Get Account Balance</a></td>
+    <td><a href="/docs/collections/getAccountBalance.Readme.md">Get Account Balance</a></td>
     <td>getAccountBalance</td>
     <td>NA</td>
   </tr>
   <tr>
     <td>Get Account Balance In Specific Currency</td>
-    <td><a href="/docs/collection/getAccountBalanceInSpecificCurrency.Readme.md">Get Account Balance In Specific Currency</a></td>
+    <td><a href="/docs/collections/getAccountBalanceInSpecificCurrency.Readme.md">Get Account Balance In Specific Currency</a></td>
     <td>getAccountBalanceInSpecificCurrency</td>
     <td>String currency</td>
   </tr>
@@ -249,80 +249,80 @@ Contains functions for all the use case scenarios within Disbursements.
 <tbody>
   <tr>
     <td rowspan="2">Transfer</td>
-    <td><a href="/docs/disbursement/transfer.Readme.md">Transfer</a></td>
+    <td><a href="/docs/disbursements/transfer.Readme.md">Transfer</a></td>
     <td>transfer</td>
     <td>Transfer transfer</td>
   </tr>
   <tr>
-    <td><a href="/docs/disbursement/getTransferStatus.Readme.md">Get Transfer Status</a></td>
+    <td><a href="/docs/disbursements/getTransferStatus.Readme.md">Get Transfer Status</a></td>
     <td>getTransferStatus</td>
     <td>String referenceId</td>
   </tr>
   <tr>
     <td>Request To Pay Delivery Notification</td>
-    <td><a href="/docs/disbursement/requestToPayDeliveryNotification.Readme.md">Request To Pay Delivery Notification</a></td>
+    <td><a href="/docs/disbursements/requestToPayDeliveryNotification.Readme.md">Request To Pay Delivery Notification</a></td>
     <td>requestToPayDeliveryNotification</td>
     <td>String referenceId, DeliveryNotification deliveryNotification, (optional)String deliveryNotificationHeader</td>
   </tr>
   <tr>
     <td rowspan="3">Deposit</td>
-    <td><a href="/docs/disbursement/depositV1.Readme.md">Deposit-V1</a></td>
+    <td><a href="/docs/disbursements/depositV1.Readme.md">Deposit-V1</a></td>
     <td>depositV1</td>
     <td>Deposit deposit</td>
   </tr>
   <tr>
-    <td><a href="/docs/disbursement/depositV2.Readme.md">Deposit-V2</a></td>
+    <td><a href="/docs/disbursements/depositV2.Readme.md">Deposit-V2</a></td>
     <td>depositV2</td>
     <td>Deposit deposit</td>
   </tr>
   <tr>
-    <td><a href="/docs/disbursement/getDepositStatus.Readme.md">Get Deposit Status</a></td>
+    <td><a href="/docs/disbursements/getDepositStatus.Readme.md">Get Deposit Status</a></td>
     <td>getDepositStatus</td>
     <td>String referenceId</td>
   </tr>
   <tr>
     <td rowspan="3">Refund</td>
-    <td><a href="/docs/disbursement/refundV1.Readme.md">Refund-V1</a></td>
+    <td><a href="/docs/disbursements/refundV1.Readme.md">Refund-V1</a></td>
     <td>refundV1</td>
     <td>Refund refund</td>
   </tr>
   <tr>
-    <td><a href="/docs/disbursement/refundV2.Readme.md">Refund-V2</a></td>
+    <td><a href="/docs/disbursements/refundV2.Readme.md">Refund-V2</a></td>
     <td>refundV2</td>
     <td>Refund refund</td>
   </tr>
   <tr>
-    <td><a href="/docs/disbursement/getRefundStatus.Readme.md">Get Refund Status</a></td>
+    <td><a href="/docs/disbursements/getRefundStatus.Readme.md">Get Refund Status</a></td>
     <td>getRefundStatus</td>
     <td>String referenceId</td>
   </tr>
   <tr>
     <td>Get UserInfo With Consent</td>
-    <td><a href="/docs/disbursement/getUserInfoWithConsent.Readme.md">Get UserInfo With Consent</a></td>
+    <td><a href="/docs/disbursements/getUserInfoWithConsent.Readme.md">Get UserInfo With Consent</a></td>
     <td>getUserInfoWithConsent</td>
     <td>AccountHolder accountHolder, String scope, AccessType accessType</td>
   </tr>
   <tr>
     <td>Get Basic Userinfo</td>
-    <td><a href="/docs/disbursement/getBasicUserinfo.Readme.md">Get Basic Userinfo</a></td>
+    <td><a href="/docs/disbursements/getBasicUserinfo.Readme.md">Get Basic Userinfo</a></td>
     <td>getBasicUserinfo</td>
     <td>String msisdn</td>
   </tr>
   <tr>
     <td>Validate Account Holder Status</td>
-    <td><a href="/docs/disbursement/validateAccountHolderStatus.Readme.md">Validate Account Holder Status</a></td>
+    <td><a href="/docs/disbursements/validateAccountHolderStatus.Readme.md">Validate Account Holder Status</a></td>
     <td>validateAccountHolderStatus</td>
     <td>AccountHolder accountHolder</td>
   </tr>
   <tr>
     <td>Get Account Balance</td>
-    <td><a href="/docs/disbursement/getAccountBalance.Readme.md">Get Account Balance</a></td>
+    <td><a href="/docs/disbursements/getAccountBalance.Readme.md">Get Account Balance</a></td>
     <td>getAccountBalance</td>
     <td>NA</td>
   </tr>
   <tr>
     <td>Get Account Balance In Specific Currency</td>
-    <td><a href="/docs/disbursement/getAccountBalanceInSpecificCurrency.Readme.md">Get Account Balance In Specific Currency</a></td>
+    <td><a href="/docs/disbursements/getAccountBalanceInSpecificCurrency.Readme.md">Get Account Balance In Specific Currency</a></td>
     <td>getAccountBalanceInSpecificCurrency</td>
     <td>String currency</td>
   </tr>
@@ -347,42 +347,42 @@ Contains functions for all the use case scenarios within Remittances.
 <tbody>
   <tr>
     <td rowspan="2">Transfer</td>
-    <td><a href="/docs/remittance/transfer.Readme.md">Transfer</a></td>
+    <td><a href="/docs/remittances/transfer.Readme.md">Transfer</a></td>
     <td>transfer</td>
     <td>Transfer transfer</td>
   </tr>
   <tr>
-    <td><a href="/docs/remittance/getTransferStatus.Readme.md">Get Transfer Status</a></td>
+    <td><a href="/docs/remittances/getTransferStatus.Readme.md">Get Transfer Status</a></td>
     <td>getTransferStatus</td>
     <td>String referenceId</td>
   </tr>
   <tr>
     <td>Request To Pay Delivery Notification</td>
-    <td><a href="/docs/remittance/requestToPayDeliveryNotification.Readme.md">Request To Pay Delivery Notification</a></td>
+    <td><a href="/docs/remittances/requestToPayDeliveryNotification.Readme.md">Request To Pay Delivery Notification</a></td>
     <td>requestToPayDeliveryNotification</td>
     <td>String referenceId, DeliveryNotification deliveryNotification, (optional)String deliveryNotificationHeader</td>
   </tr>
   <tr>
     <td>Get UserInfo With Consent</td>
-    <td><a href="/docs/remittance/getUserInfoWithConsent.Readme.md">Get UserInfo With Consent</a></td>
+    <td><a href="/docs/remittances/getUserInfoWithConsent.Readme.md">Get UserInfo With Consent</a></td>
     <td>getUserInfoWithConsent</td>
     <td>AccountHolder accountHolder, String scope, AccessType accessType</td>
   </tr>
   <tr>
     <td>Get Basic Userinfo</td>
-    <td><a href="/docs/remittance/getBasicUserinfo.Readme.md">Get Basic Userinfo</a></td>
+    <td><a href="/docs/remittances/getBasicUserinfo.Readme.md">Get Basic Userinfo</a></td>
     <td>getBasicUserinfo</td>
     <td>String msisdn</td>
   </tr>
   <tr>
     <td>Validate Account Holder Status</td>
-    <td><a href="/docs/remittance/validateAccountHolderStatus.Readme.md">Validate Account Holder Status</a></td>
+    <td><a href="/docs/remittances/validateAccountHolderStatus.Readme.md">Validate Account Holder Status</a></td>
     <td>validateAccountHolderStatus</td>
     <td>AccountHolder accountHolder</td>
   </tr>
   <tr>
     <td>Get Account Balance</td>
-    <td><a href="/docs/remittance/getAccountBalance.Readme.md">Get Account Balance</a></td>
+    <td><a href="/docs/remittances/getAccountBalance.Readme.md">Get Account Balance</a></td>
     <td>getAccountBalance</td>
     <td>NA</td>
   </tr>
@@ -448,13 +448,11 @@ npm install
 e.g.
 
 ```
-COLLECTION_SUBSCRIPTION_KEY=<your_collection_subscription_key_here>
-DISBURSEMENT_SUBSCRIPTION_KEY=<your_disbursement_subscription_key_here>
-REMITTANCE_SUBSCRIPTION_KEY=<your_remittance_subscription_key_here>
-CONSUMER_SECRET=<your_consumer_secret_here>
-REFERENCE_ID=<your_api_user/referenceId_value _here>
-API_KEY=<your_api_key_here>
-CALLBACK_URL=<your_callback_url_here>
+MOMO_COLLECTION_TOKEN_URL='https://sandbox.momodeveloper.mtn.com/collection/token/'
+MOMO_DISBURSEMENT_TOKEN_URL='https://sandbox.momodeveloper.mtn.com/disbursement/token/'
+MOMO_REMITTANCE_TOKEN_URL='https://sandbox.momodeveloper.mtn.com/remittance/token/'
+MOMO_BASE_URL_AUTH = 'https://sandbox.momodeveloper.mtn.com/'
+TARGETENVIRONMENT = 'sandbox'
 ```
 -   Run sample code by staring the server and results can be view in browser console:
 

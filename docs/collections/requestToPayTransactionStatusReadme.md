@@ -1,4 +1,4 @@
-#Get Request to pay transaction status
+# Get Request to pay transaction status
 
 `Here, requestToPayTransactionStatus() creates a GET request to collection/v1_0/requesttopay/{referenceId}`
 
